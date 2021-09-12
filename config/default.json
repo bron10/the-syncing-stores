@@ -1,0 +1,23 @@
+{
+    "dbConfig": {
+        "protocol" : "mongodb",
+        "host": "localhost",
+        "port": 27017,
+        "dbName": "customers",
+        "collection" : "users"
+    },
+    "cacheConfig" : {
+        "host": "127.0.0.1",
+        "port": 6379,
+        "prefix": "customers:"
+    },
+    "appConfig" : {
+        "port" : 3000,
+        "defaultErrorCode" : 400,
+        "responses" : {
+            "addSuccess" : "Customer added successfully",
+            "updateSuccess" : "Customer updated successfully",
+            "errorMessage" : "Something went Wrong!"
+        }
+    }
+  }
