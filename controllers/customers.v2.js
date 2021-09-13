@@ -11,7 +11,7 @@ const insertCustomerCtrl = async (req ,res, next) => {
             data : JSON.stringify({...payload, api_uid : apiUid}),
             primary : true
         })
-        res.send(payload)
+        res.send({...payload, message : addSuccess})
     }catch(e){
         console.log("Error", e)
         res.status(defaultErrorCode).send("Error")
